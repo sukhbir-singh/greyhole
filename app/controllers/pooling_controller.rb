@@ -1,6 +1,6 @@
 
 class PoolingController < ApplicationController
-	before_filter :admin_required
+	before_action :admin_required
 
 	def index
 		pl = PartitionUtils.new.info

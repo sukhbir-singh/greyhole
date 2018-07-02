@@ -1,6 +1,5 @@
-class CreateDiskPoolPartitions < ActiveRecord::Migration
+class CreateDiskPoolPartitions < ActiveRecord::Migration[5.2]
 	def self.up
-
 		# protect against partial failures to uninstall
 		execute "DROP TABLE IF EXISTS 'disk_pool_partitions'"
 

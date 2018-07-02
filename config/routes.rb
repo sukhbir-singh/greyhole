@@ -1,6 +1,6 @@
 Greyhole::Engine.routes.draw do
 	# root of the plugin
-        root :to => 'greyhole#index'
+	root :to => 'pooling#index'
 	# examples of controllers built in this generator. delete at will
-	match 'status' => 'greyhole#status'
+	match 'status' => 'pooling#status', via: [:get,:post]
 end
